@@ -33,7 +33,7 @@ const MapPage = () => {
     const filtered = places.filter((place) => Number(place.rating) > rating);
 
     setFilteredPlaces(filtered);
-  }, [rating]);
+  }, [rating,places]);
 
   useEffect(() => {
     if (bounds) {
@@ -50,7 +50,7 @@ const MapPage = () => {
           setIsLoading(false);
         });
     }
-  }, [bounds, type]);
+  }, [bounds, type, coords.lat, coords.lng]);
 
   const onLoad = (autoC) => setAutocomplete(autoC);
 

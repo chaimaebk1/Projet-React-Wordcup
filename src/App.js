@@ -5,16 +5,18 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Needs from './pages/Needs';
 import Clothes from './pages/Clothes';
-import Food from './pages/Food';
 
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import HospitalsRabat from './pages/HospitalsRabat';
+import HospitalsMarrakech from './pages/HospitalsMarrakech';
+
 import PharmaciesRabat from './pages/PharmaciesRabat';
-import PharmaciesCadablanca from './pages/PharmaciesCasablanca';
+
 import HospitalsCasablanca from './pages/HospitalsCasablanca';
 import MapPage from './pages/MapPage';
 import StoreDetails from './components/ClothesPages/storeDetails';
+import HospitalsTanger from './pages/HospitalsTanger';
 const App = () => {
   return (
     <div>
@@ -28,16 +30,17 @@ const App = () => {
             <Route path="/needs"  element={<Needs />} />
             <Route path="/map"  element={<MapPage />} />
             
+            <Route path="/HospitalsMarrakech" element={<HospitalsMarrakech />} />
+            <Route path="/HospitalsTanger" element={<HospitalsTanger />} />
 
             <Route path="/HospitalsRabat" element={<HospitalsRabat />} />
             <Route path="/HospitalsCasablanca" element={<HospitalsCasablanca />} />
             <Route path="/PharmaciesRabat" element={<PharmaciesRabat />} />
-            <Route path="/PharmaciesCasablanca" element={<PharmaciesCadablanca />} />
             <Route path="/store/:storeId" element={<StoreDetails/>} />
 
 
 
-
+            
             {/* Add more routes as needed */}
           </Routes>
           <Footer />

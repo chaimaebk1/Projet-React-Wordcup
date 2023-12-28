@@ -69,6 +69,9 @@
     font-weight: 600;
     transition: .5s;
 }
+.btn3 {
+    background-color: red;
+}
 
 .btn.btn-primary,
 .btn.btn-secondary {

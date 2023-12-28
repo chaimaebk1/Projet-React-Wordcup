@@ -9,23 +9,20 @@ const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
-      <Toolbar className={classes.toolbar}>
-        <Box display="flex">
-          <Typography variant="h6" className={classes.title}>
-            Explore new places !
-          </Typography>
+    <div position="static">
+      <Toolbar className="mt-4 position-relative w-40 mx-auto animated slideInDown d-flex align-items-center">
+        <Box className="d-flex">
+        <h3 className='text-primary'>Explore new places!</h3>
           <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
             <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase placeholder="Search…" classes={{ root: classes.inputRoot, input: classes.inputInput }} />
+            
+              <InputBase placeholder="Search…" className="form-control border-1 rounded-pill pt-2" />
+
             </div>
           </Autocomplete>
         </Box>
       </Toolbar>
-    </AppBar>
+    </div>
   );
 };
 

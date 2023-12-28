@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
-import HospitalCard from '../components/Hospital';
-import Body from "../components/bodyNeeds";
-import Contact from '../components/Contact';
+import HospitalCard from '../components/HospitalCard';
 
 const containerStyle = {
   margin: '30px',
@@ -22,7 +20,7 @@ const HospitalsRabat = () => {
   useEffect(() => {
     const fetchHospitalData = async () => {
       try {
-        const url = 'https://658480a94d1ee97c6bcfe0fe.mockapi.io/HospitalsRabat';
+        const url = 'https://q918z.wiremockapi.cloud/HospitalsRabat';
         const response = await fetch(url);
         const result = await response.json(); // Parse JSON
         setHospitalData(result); // Set state with the correct data https://q918z.wiremockapi.cloud/HospitalsCasa
@@ -43,29 +41,29 @@ const HospitalsRabat = () => {
   return (
    
        
-    <div>
-       <Body/>
-      <div className="row g-4 ml-10 mr-10">
-        {hospitalData.map((hospital, index) => (
-          <HospitalCard key={index} hospital={hospital} onClick={handleCardClick} />
-        ))}
-      </div>
 
-      <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-          {selectedHospital && (
-            <Marker
-              position={{
-                lat: parseFloat(selectedHospital.latitude),
-                lng: parseFloat(selectedHospital.longitude),
-              }}
-            />
-          )}
-        </GoogleMap>
-      </LoadScript>
-        <Contact/>
+  <div className="row">
+    <div className="col-lg-3 ml-20 mr-20 mt-20 overflow-auto " style={{ maxHeight: '600px' }} >
+      {hospitalData.map((hospital, index) => (
+        <HospitalCard key={index} hospital={hospital} onClick={handleCardClick} />
+      ))}
     </div>
-  );
+<div className='col-lg-9'>
+    <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
+        {selectedHospital && (
+          <Marker
+            position={{
+              lat: parseFloat(selectedHospital.latitude),
+              lng: parseFloat(selectedHospital.longitude),
+            }}
+          />
+        )}
+      </GoogleMap>
+    </LoadScript>
+</div>
+  </div>
+);
 };
 
 export default HospitalsRabat;

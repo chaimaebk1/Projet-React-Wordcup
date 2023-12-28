@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import HospitalsRabat from '../pages/HospitalsRabat'; 
+import HospitalsCasablanca from '../pages/HospitalsCasablanca';
+import HospitalsMarrakech from '../pages/HospitalsMarrakech';
+import HospitalsTanger from '../pages/HospitalsTanger';
+
 
 const SearchBar = () => {
-  const navigate = useNavigate();
+  
   const [selectedType, setSelectedType] = useState('Hospitals');
   const [selectedCity, setSelectedCity] = useState('Rabat');
+  const [showResults, setShowResults] = useState(false);
 
   const handleTypeChange = (event) => {
     const newType = event.target.value;
@@ -23,8 +28,19 @@ const SearchBar = () => {
     console.log('Selected City:', selectedCity);
 
     // Use navigate to navigate to the desired page
-    navigate(`/${selectedType}${selectedCity}`);
+    setShowResults(true); 
   };
+  const components = {
+    HospitalsRabat: HospitalsRabat,
+    HospitalsCasablanca: HospitalsCasablanca,
+    HospitalsMarrakech: HospitalsMarrakech,
+    HospitalsTanger: HospitalsTanger,
+
+    
+    // Ajoutez d'autres associations de composants selon les sélections possibles
+  };
+
+  const SelectedComponent = components[`${selectedType}${selectedCity}`];
 
   return (
     <div className="container-xxl py-5">
@@ -33,7 +49,7 @@ const SearchBar = () => {
           <h6 className="section-title bg-white text-center text-primary px-3">Explore Your Needs</h6>
           <h1 className="mb-5">Find Everything You Need!</h1>
           <h5 className="mb-4">
-            Search by city to discover a range of services including hospitals, pharmacies, and other essential needs. We've got you covered!
+            Search by city to discover a range of services including hospitalsand other essential needs. We've got you covered!
           </h5>
         </div>
         <div className="mt-4 position-relative w-75 mx-auto animated slideInDown d-flex align-items-center">
@@ -45,7 +61,7 @@ const SearchBar = () => {
           >
             <option value="Hospitals">Hospitals</option>
             <option value="Pharmacies">Pharmacies</option>
-            <option value="Hotels">Hotels</option>
+           
             {/* Add more options as needed */}
           </select>
 
@@ -58,9 +74,9 @@ const SearchBar = () => {
             <option value="Rabat">Rabat</option>
             <option value="Tanger">Tanger</option>
             <option value="Casablanca">Casablanca</option>
+            <option value="Marrakech">Marrakech</option>
             {/* Add more options as needed */}
           </select>
-
           <button
             type="button"
             className="btn btn-primary rounded-pill py-2 px-4"
@@ -69,6 +85,9 @@ const SearchBar = () => {
             Search
           </button>
         </div>
+        
+      </div><div>
+        {showResults && SelectedComponent && <SelectedComponent />}
       </div>
     </div>
   );
