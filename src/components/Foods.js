@@ -12,7 +12,7 @@ const Foods = () => {
                 className="img-fluid rounded-7"
                 src="../../img/food.jpeg"
                 alt=""
-                style={{ width: '400px', height: '500px', objectFit: 'cover', borderRadius: '100%' }}
+                style={{ width: '400px', height: '500px', objectFit: 'cover', borderRadius: '100%',marginLeft : '20px' }}
               />
             </div>
           </div>

@@ -39,7 +39,7 @@ const Clothes = () => {
                 className="img-fluid rounded-7"
                 src="../../img/caftann.jpg"
                 alt=""
-                style={{ width: '400px', height: '500px', objectFit: 'cover', borderRadius: '100%', marginLeft : '180px' }}
+                style={{ width: '400px', height: '500px', objectFit: 'cover', borderRadius: '100%', marginLeft : '120px' }}
               />
             </div>
             </div>

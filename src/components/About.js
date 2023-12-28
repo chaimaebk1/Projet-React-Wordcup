@@ -7,17 +7,27 @@ return (
   <div className="container-xxl py-5">
     <div className="container">
       <div className="row g-5 align-items-center">
-      <div className="col-lg-6 ">
-        
-      <div className="rounded overflow-hidden h-100 " style={{ minHeight: '400px'}}>
-              <img
-                className="img-fluid rounded-7"
-  src="../../img/about.jpg"
-  alt=""
-  style={{ width: '400px', height: '500px', objectFit: 'cover', borderRadius: '100%' }}
-/>
-</div>
-        </div>
+         <div className="col-lg-6">
+              <div className="row g-2">
+                <div className="col-6 position-relative wow fadeIn" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeIn' }}>
+                  <div className="about-experience bg-primary rounded-7">
+                    <h1 className="display-1 mb-0">25</h1>
+                    <small className="fs-5 fw-bold">Years Experience</small>
+                  </div>
+                </div>
+                <div className="col-6 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
+                  <img className="img-fluids rounded-7" src="../img/aboutsmall.jpg" alt="Service 1" />
+                </div>
+                <div className="col-6 wow fadeIn" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeIn' }}>
+                  <img className="img-fluids rounded-7" src="../img/couple.jpg" alt="Service 2" />
+                </div>
+                <div className="col-6 wow fadeIn" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' }}>
+                  <img className="img-fluids rounded-7" src="../img/chefchaoune.jpg" alt="Service 3" />
+                </div>
+              </div>
+            </div>
+              
+
         <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
         <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>
             <h1 className="mb-4">

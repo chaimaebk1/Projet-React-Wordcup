@@ -14,6 +14,7 @@ import PharmaciesRabat from './pages/PharmaciesRabat';
 import PharmaciesCadablanca from './pages/PharmaciesCasablanca';
 import HospitalsCasablanca from './pages/HospitalsCasablanca';
 import MapPage from './pages/MapPage';
+import StoreDetails from './components/ClothesPages/storeDetails';
 const App = () => {
   return (
     <div>
@@ -22,7 +23,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/clothes"  element={<Clothes />} />
-            <Route path="/food"  element={<Food />} />
+            {/* <Route path="/food"  element={<Food />} /> */}
             <Route path="/contact"  element={<Contact />} />
             <Route path="/needs"  element={<Needs />} />
             <Route path="/map"  element={<MapPage />} />
@@ -32,6 +33,8 @@ const App = () => {
             <Route path="/HospitalsCasablanca" element={<HospitalsCasablanca />} />
             <Route path="/PharmaciesRabat" element={<PharmaciesRabat />} />
             <Route path="/PharmaciesCasablanca" element={<PharmaciesCadablanca />} />
+            <Route path="/store/:storeId" element={<StoreDetails/>} />
+
 
 
 

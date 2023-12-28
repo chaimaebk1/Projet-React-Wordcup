@@ -53,7 +53,10 @@ const Header = () => {
       <div className={`container-fluid position-fixed z-10000 p-0 ${isSticky ? 'sticky-top shadow-sm' : ''}`}>
         <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <a href="" class="navbar-brand p-0">
-                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>AtlasExplore</h1>
+                <h1 class="text-primary m-0">
+                <NavLink to="/" className="nav-link " activeClassName="active" exact>
+                  <i class="fa fa-map-marker-alt me-3"></i>AtlasExplore
+                </NavLink></h1>
                 {/* <!-- <img src="img/logo.png" alt="Logo"> --> */}
             </a>
           <button
@@ -84,11 +87,11 @@ const Header = () => {
                   Clothes
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink to="/food" className="nav-link" activeClassName="active">
                   Food
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink to="/needs" className="nav-link" activeClassName="active">
                   Facilities
