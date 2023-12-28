@@ -67,8 +67,6 @@ const StoreDetails = () => {
             <div className="container">
             
                 <div className="row g-5 align-items-center flex-one-column-reverse " >
-                        {/* <h1>{storeData.city || 'Store Name Unavailable'}</h1> */}
-
                         <div className="coll col-lg-61"  style={{maxHeight : "450px", marginTop : "10%"}}>
                             <Carousel data-bs-theme="dark">
                                 {carouselData && carouselData.map((item, index) => (
