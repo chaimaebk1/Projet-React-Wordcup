@@ -10,18 +10,18 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 33.5731, // Default center latitude
-  lng: -7.5898 , // Default center longitude
+  lat: 31.624363627002047,  // Default center latitude
+  lng: -7.987257903653542 , // Default center longitude
 };
 
-const HospitalsCasablanca = () => {
+const HospitalsMarrakech = () => {
   const [hospitalData, setHospitalData] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
   useEffect(() => {
     const fetchHospitalData = async () => {
       try {
-        const url = 'https://q918z.wiremockapi.cloud/HospitalsCasa';
+        const url = 'https://q918z.wiremockapi.cloud/HospitalsMarrakech';
         const response = await fetch(url);
         const result = await response.json(); // Parse JSON
         setHospitalData(result); // Set state with the correct data https://q918z.wiremockapi.cloud/HospitalsCasa
@@ -68,4 +68,4 @@ const HospitalsCasablanca = () => {
   );
 };
 
-export default HospitalsCasablanca;
+export default HospitalsMarrakech;
