@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Foods = () => {
   return (
@@ -28,7 +29,10 @@ const Foods = () => {
                 From aromatic spices like cumin and coriander to iconic dishes like couscous and street food delights such as bissara and msemen,
                 every bite tells a story. Conclude your culinary adventure with traditional mint tea, a symbol of Moroccan hospitality, 
                 and experience the timeless allure of this vibrant and diverse culinary landscape.
-              </p>    <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+              </p>  
+              <NavLink to="/map" className="nav-link" activeClassName="active">
+                <a className="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a>
+              </NavLink>
           </div>
          
        

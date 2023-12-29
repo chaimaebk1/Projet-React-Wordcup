@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <h4 className="text-white mb-3">Contact</h4>
-            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+            {/* <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p> */}
             <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+212 66 66 66 66</p>
             <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
             <div className="d-flex pt-2">
@@ -29,22 +29,22 @@ const Footer = () => {
             <h4 className="text-white mb-3">Gallery</h4>
             <div className="row g-2 pt-2">
               <div className="col-4">
-                <img className="img-fluid bg-light p-1" src="../../img/package-1.jpg" alt="" />
+                <img className="img-fluid bg-light p-1" src="../../img/dress.jpg" alt="" />
               </div>
               <div className="col-4">
-                <img className="img-fluid bg-light p-1" src="../../img/package-2.jpg" alt="" />
+                <img className="img-fluid bg-light p-1" src="../../img/Culture.jpg" alt="" />
               </div>
               <div className="col-4">
-                <img className="img-fluid bg-light p-1" src="../../img/package-3.jpg" alt="" />
+                <img className="img-fluid bg-light p-1" src="../../img/riad.jpg" alt="" />
               </div>
               <div className="col-4">
-                <img className="img-fluid bg-light p-1" src="../../img/package-2.jpg" alt="" />
+                <img className="img-fluid bg-light p-1" src="../../img/moroccanWomen.jpg" alt="" />
               </div>
               <div className="col-4">
-                <img className="img-fluid bg-light p-1" src="../../img/package-3.jpg" alt="" />
+                <img className="img-fluid bg-light p-1" src="../../img/moroccanPottery.jpg" alt="" />
               </div>
               <div className="col-4">
-                <img className="img-fluid bg-light p-1" src="../../img/package-1.jpg" alt="" />
+                <img className="img-fluid bg-light p-1" src="../../img/Leeban.jpg" alt="" />
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Needs from './pages/Needs';
 import Clothes from './pages/Clothes';
 
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HospitalsRabat from './pages/HospitalsRabat';
 import HospitalsMarrakech from './pages/HospitalsMarrakech';

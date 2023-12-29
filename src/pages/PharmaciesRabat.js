@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 import PharmacyCard from '../components/Pharmacy';
 import Body from "../components/bodyNeeds";
-import Contact from '../components/Contact';
+import Contact from '../components/ContactPages/Contact';
 
 const containerStyle = {
   margin: '30px',

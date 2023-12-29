@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Clothes = () => {
   return (
@@ -26,7 +27,9 @@ const Clothes = () => {
               cultural pride and craftsmanship.
             </p>
             {/* <p className="mb-4">Our site guides you through traditional clothing and reveals enchanting locations that define the beauty of Morocco. Experience the perfect blend of tradition and modernity, both in attire and the remarkable places that make Morocco truly unique.</p> */}
-            <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+            <NavLink to="/clothes" className="nav-link" activeClassName="active">
+              <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" >Explore More</a>
+            </NavLink>
           </div>
           <div className="col-lg-6 ">
           

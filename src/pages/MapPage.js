@@ -6,7 +6,7 @@ import Header from '../components/Header/HeaderMap';
 import List from '../components/List/List';
 import Map from '../components/Map/Map';
 import Body from "../components/bodyMap";
-import Contact from '../components/Contact';
+import Contact from '../components/ContactPages/Contact';
 
 const MapPage = () => {
   const [type, setType] = useState('restaurants');

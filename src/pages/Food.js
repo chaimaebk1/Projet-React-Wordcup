@@ -1,8 +1,7 @@
 import Body from "../components/bodyFood";
-
 import Contact from '../components/Contact';
 
-const Hopitaux = () => {
+const Food = () => {
 
     return (
       <div>
@@ -13,4 +12,4 @@ const Hopitaux = () => {
     )
   }
   
-  export default Hopitaux
+  export default Food
