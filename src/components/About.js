@@ -9,13 +9,25 @@ return (
       <div className="row g-5 align-items-center">
          <div className="col-lg-6">
               <div className="row g-2">
-                <div className="col-6 position-relative wow fadeIn" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeIn' }}>
+                <div className="col-6 position-relative wow fadeOut" data-wow-delay="0.7s" style={{ visibility: 'visible', animationDelay: '0.7s', animationName: 'fadeOut' }}>
                   <div className="about-experience bg-primary rounded-7">
-                    <h1 className="display-1 mb-0">25</h1>
-                    <small className="fs-5 fw-bold">Years Experience</small>
+                    <h2 className="display-1 mb-0 text-white">2nd</h2>
+                    <small className="fs-5 fw-bold text-white ">Most Visited In Africa</small>
                   </div>
                 </div>
-                <div className="col-6 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
+                <div className="col-6 wow fadeIn" data-wow-delay="0.3s">
+                <img className="img-fluid rounded-7" src="../img/couple.jpg" alt=""  style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeIn', width:'300px',maxHeight:'300px' }} />
+                </div>
+              <div className="col-6 wow fadeIn" data-wow-delay="0.1s">
+              <img className="img-fluid rounded-7" src="../img/aboutsmall.jpg" alt=""  style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' ,width:'300px', maxHeight:'300px'}} />
+            </div>
+             <div className="col-6 wow fadeIn" data-wow-delay="0.5s">
+              <img className="img-fluid rounded-7" src="../img/chefchaoune.jpg" alt=""  style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' ,width:'300px', maxHeight:'300px'}} />
+            </div>
+              </div>
+            </div>
+{/*       
+ <div className="col-6 wow fadeIn" data-wow-delay="0.1s" style={{ visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeIn' }}>
                   <img className="img-fluids rounded-7" src="../img/aboutsmall.jpg" alt="Service 1" />
                 </div>
                 <div className="col-6 wow fadeIn" data-wow-delay="0.3s" style={{ visibility: 'visible', animationDelay: '0.3s', animationName: 'fadeIn' }}>
@@ -23,10 +35,9 @@ return (
                 </div>
                 <div className="col-6 wow fadeIn" data-wow-delay="0.5s" style={{ visibility: 'visible', animationDelay: '0.5s', animationName: 'fadeIn' }}>
                   <img className="img-fluids rounded-7" src="../img/chefchaoune.jpg" alt="Service 3" />
-                </div>
-              </div>
-            </div>
-              
+                </div>        
+
+      */}
 
         <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
         <h6 className="section-title bg-white text-start text-primary pe-3">About Us</h6>

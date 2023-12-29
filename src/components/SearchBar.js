@@ -60,7 +60,7 @@ const SearchBar = () => {
             onChange={handleTypeChange}
           >
             <option value="Hospitals">Hospitals</option>
-            <option value="Pharmacies">Pharmacies</option>
+           
            
             {/* Add more options as needed */}
           </select>

@@ -9,7 +9,7 @@ const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles();
 
   return (
-    <div position="static">
+    <div >
       <Toolbar className="mt-4 position-relative w-40 mx-auto animated slideInDown d-flex align-items-center">
         <Box className="d-flex">
         <h3 className='text-primary'>Explore new places!</h3>
