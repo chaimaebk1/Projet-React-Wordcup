@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isSticky, setSticky] = useState(false);
   const [isNavbarCollapsed, setNavbarCollapsed] = useState(true);
+  const location = useLocation();
 
   const toggleNavbar = () => {
     setNavbarCollapsed(!isNavbarCollapsed);
   };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -23,6 +25,11 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Scroll to the top when the location changes
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <div>

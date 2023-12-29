@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Needs from './pages/Needs';
 import Clothes from './pages/Clothes';
 
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HospitalsRabat from './pages/HospitalsRabat';
 import HospitalsMarrakech from './pages/HospitalsMarrakech';
@@ -36,12 +36,9 @@ const App = () => {
             <Route path="/HospitalsRabat" element={<HospitalsRabat />} />
             <Route path="/HospitalsCasablanca" element={<HospitalsCasablanca />} />
             <Route path="/PharmaciesRabat" element={<PharmaciesRabat />} />
-            <Route path="/store/:storeId" element={<StoreDetails/>} />
-
-
-
+            {/* <Route path="/PharmaciesCasablanca" element={<PharmaciesCadablanca />} /> */}
             
-            {/* Add more routes as needed */}
+            <Route path="/Clothes/:selectedCity/:storeId" element={<StoreDetails/>} />
           </Routes>
           <Footer />
           

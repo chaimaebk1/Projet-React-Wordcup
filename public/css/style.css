@@ -7,6 +7,10 @@
 
 }
 
+p {
+    text-align: justify;
+}
+
 .z-10000{z-index:10000}
   .service-item {
     height: 250px;
@@ -216,7 +220,7 @@
 }
 
 .map-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/MoroMAp.png);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/MoroMAp12.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +236,15 @@
 }
 
 .clothes-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/womClothes.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/dress1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.Contact-header {
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/Culture.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -6,7 +6,9 @@ import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
 
 
 const StoreDetails = () => {
-  const { storeId } = useParams();
+  // const { storeId } = useParams();
+  // const { selectedCity } = useParams();
+  const { selectedCity, storeId } = useParams();
   const [storeData, setStoreData] = useState(null);
   const [carouselData, setCarouselData] = useState(null);
 
@@ -30,7 +32,13 @@ const StoreDetails = () => {
   useEffect(() => {
     const fetchStoreDetails = async () => {
       try {
-        const url = `https://657af274394ca9e4af132252.mockapi.io/hop/Clothes_Kech/${storeId}`;
+        let url;
+        if (selectedCity === 'Casablanca' || selectedCity === 'Marrakech') {
+          url = `https://657af274394ca9e4af132252.mockapi.io/Clothes/${selectedCity}/${storeId}`;
+        } else {
+          url = `https://658defad7c48dce94739dd6a.mockapi.io/Clothes/${selectedCity}/${storeId}`;
+        }
+        //  url = `https://657af274394ca9e4af132252.mockapi.io/Clothes/Casablanca/${storeId}`;
         const response = await fetch(url);
         const result = await response.json();
         setStoreData(result);
@@ -46,7 +54,8 @@ const StoreDetails = () => {
     };
 
     fetchStoreDetails();
-  }, [storeId]);
+  }, [storeId, selectedCity]);
+
 
   if (!storeData) {
     return <div>Loading...</div>;
@@ -58,8 +67,6 @@ const StoreDetails = () => {
             <div className="container">
             
                 <div className="row g-5 align-items-center flex-one-column-reverse " >
-                        {/* <h1>{storeData.city || 'Store Name Unavailable'}</h1> */}
-
                         <div className="coll col-lg-61"  style={{maxHeight : "450px", marginTop : "10%"}}>
                             <Carousel data-bs-theme="dark">
                                 {carouselData && carouselData.map((item, index) => (

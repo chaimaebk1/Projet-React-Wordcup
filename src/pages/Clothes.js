@@ -1,7 +1,7 @@
-import Body from "../components/bodyClothes";
-import Contact from '../components/Contact';
+import Body from "../components/ClothesPages/bodyClothes";
+import Contact from '../components/ContactPages/Contact';
 import Stores from "../components/ClothesPages/StoreComponent";
-const Hopitaux = () => {
+const Clothes = () => {
 
     return (
       <div>
@@ -13,4 +13,4 @@ const Hopitaux = () => {
     )
   }
   
-  export default Hopitaux
+  export default Clothes
