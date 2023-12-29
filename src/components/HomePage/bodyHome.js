@@ -13,11 +13,11 @@ const Body = () => {
               <h1 class="text-white display-5 mb-3 animated slideInDown ">Enjoy Your Stay With Us!</h1>
               <p class="fs-5 text-white mb-4 animated slideInDown">Seeking medical assistance during your stay? 
                 Exploring the bustling markets for traditional Moroccan attire? Hunting for the coziest accommodation options?
-                Craving the flavors of authentic Moroccan cuisine? 
-                <span class=" text-center ">
+                Craving the flavors of authentic Moroccan cuisine?
+                <p class=" text-center ">
                   <b className="text-primary ">AtlasExplore.com </b> 
                   has got you covered!
-                </span>
+                </p>
               </p>
               
               
