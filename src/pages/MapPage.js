@@ -7,6 +7,8 @@ import List from '../components/List/List';
 import Map from '../components/Map/Map';
 import Body from "../components/bodyMap";
 import Contact from '../components/ContactPages/Contact';
+import HeaderP from '../components/Header';
+
 
 const MapPage = () => {
   const [type, setType] = useState('restaurants');
@@ -63,6 +65,7 @@ const MapPage = () => {
 
   return (
     <div >
+    <HeaderP/>
      <Body />
     <div className="cnt">
      

@@ -64,11 +64,11 @@ const Header = () => {
       {/* Navbar & Hero Start */}
       <div className={`container-fluid position-fixed z-10000 p-0 ${isSticky ? 'sticky-top shadow-sm' : ''}`}>
         {/* eslint-disable-next-line */}
-        <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
           {/* eslint-disable-next-line */}
         <a href="" class="navbar-brand p-0">
                 <h1 class="text-primary m-0">
-                <NavLink to="/" className="nav-link k2 " activeClassName="active" exact>
+                <NavLink to="/" className="nav-link text-white " activeClassName="active" exact>
                   <i class="fa fa-map-marker-alt me-3"></i>AtlasExplore
                 </NavLink></h1>
                 {/* <!-- <img src="img/logo.png" alt="Logo"> --> */}
@@ -87,32 +87,32 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto py-0">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link text-white" activeClassName="active" exact>
+                <NavLink to="/" className="nav-link k1 " activeClassName="active" exact>
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/map" className="nav-link text-white" activeClassName="active">
+                <NavLink to="/map" className="nav-link k1 " activeClassName="active">
                   Attractions
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/clothes" className="nav-link text-white" activeClassName="active">
+                <NavLink to="/clothes" className="nav-link k1 " activeClassName="active">
                   Clothes
                 </NavLink>
               </li>
               {/* <li className="nav-item">
-                <NavLink to="/food" className="nav-link k2" activeClassName="active">
+                <NavLink to="/food" className="nav-link k1 " activeClassName="active">
                   Food
                 </NavLink>
               </li> */}
               <li className="nav-item">
-                <NavLink to="/needs" className="nav-link text-white" activeClassName="active">
+                <NavLink to="/needs" className="nav-link k1 " activeClassName="active">
                   Facilities
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contact" className="nav-link text-white" activeClassName="active">
+                <NavLink to="/contact" className="nav-link k1 " activeClassName="active">
                   Contact Us
                 </NavLink>
               </li>
