@@ -6,8 +6,8 @@ const ContactH = () => {
   return (
    
     <div>
-      <div class="container-fluid bg-primary py-5 mb-5 Contact-header">
-        <div class="container py-5">
+      <div class="container-fluid bg-primary py-4 mb-5 Contact-header">
+        <div class="container py-4">
           <div class="row justify-content-center py-5">
             <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
               <h1 class="text-white display-3 mb-3 animated slideInDown ">Get In Touch With Us!</h1>

@@ -31,6 +31,7 @@ const Foods = () => {
                 and experience the timeless allure of this vibrant and diverse culinary landscape.
               </p>  
               <NavLink to="/map" className="nav-link" activeClassName="active">
+              {/* eslint-disable-next-line */}
                 <a className="btn btn-primary rounded-pill py-3 px-5 mt-3">Explore More</a>
               </NavLink>
           </div>

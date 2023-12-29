@@ -11,7 +11,6 @@ import Footer from './components/Footer';
 import HospitalsRabat from './pages/HospitalsRabat';
 import HospitalsMarrakech from './pages/HospitalsMarrakech';
 
-import PharmaciesRabat from './pages/PharmaciesRabat';
 
 import HospitalsCasablanca from './pages/HospitalsCasablanca';
 import MapPage from './pages/MapPage';
@@ -35,7 +34,6 @@ const App = () => {
 
             <Route path="/HospitalsRabat" element={<HospitalsRabat />} />
             <Route path="/HospitalsCasablanca" element={<HospitalsCasablanca />} />
-            <Route path="/PharmaciesRabat" element={<PharmaciesRabat />} />
             {/* <Route path="/PharmaciesCasablanca" element={<PharmaciesCadablanca />} /> */}
             
             <Route path="/Clothes/:selectedCity/:storeId" element={<StoreDetails/>} />

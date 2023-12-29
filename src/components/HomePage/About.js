@@ -4,7 +4,7 @@ const About = () => {
 
 return (
   <div>
-  <div className="container-xxl py-5">
+  <div className="container-xxl py-4">
     <div className="container">
       <div className="row g-5 align-items-center">
          <div className="col-lg-6">
@@ -76,6 +76,7 @@ return (
                   </p>
                 </div>
               </div>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
             </div>
     

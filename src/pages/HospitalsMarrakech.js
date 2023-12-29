@@ -51,7 +51,7 @@ const HospitalsMarrakech = () => {
         ))}
       </div>
   <div className='col-lg-9'>
-      <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
+      <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U"  libraries={["places"]} >
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
           {selectedHospital && (
             <Marker

@@ -49,7 +49,7 @@ const SearchBar = () => {
           <h6 className="section-title bg-white text-center text-primary px-3">Explore Your Needs</h6>
           <h1 className="mb-5">Find Everything You Need!</h1>
           <h5 className="mb-4">
-            Search by city to discover a range of services including hospitalsand other essential needs. We've got you covered!
+            Search by city to discover a range of services including hospitals, malls and other facilities in 5 different cities. We've got you covered!
           </h5>
         </div>
         <div className="mt-4 position-relative w-75 mx-auto animated slideInDown d-flex align-items-center">

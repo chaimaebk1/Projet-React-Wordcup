@@ -45,10 +45,15 @@ const Header = () => {
           </div>
           <div className="col-lg-4 text-center text-lg-end">
             <div className="d-inline-flex align-items-center" style={{ height: '45px' }}>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i className="fab fa-twitter fw-normal"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i className="fab fa-facebook-f fw-normal"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i className="fab fa-linkedin-in fw-normal"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i className="fab fa-instagram fw-normal"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i className="fab fa-youtube fw-normal"></i></a>
             </div>
           </div>
@@ -58,7 +63,9 @@ const Header = () => {
 
       {/* Navbar & Hero Start */}
       <div className={`container-fluid position-fixed z-10000 p-0 ${isSticky ? 'sticky-top shadow-sm' : ''}`}>
+        {/* eslint-disable-next-line */}
         <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+          {/* eslint-disable-next-line */}
         <a href="" class="navbar-brand p-0">
                 <h1 class="text-primary m-0">
                 <NavLink to="/" className="nav-link " activeClassName="active" exact>
@@ -86,7 +93,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
                 <NavLink to="/map" className="nav-link" activeClassName="active">
-                  Map
+                  Attractions
                 </NavLink>
               </li>
               <li className="nav-item">

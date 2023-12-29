@@ -7,10 +7,15 @@ const Footer = () => {
         <div className="row g-5">
           <div className="col-lg-4 col-md-6">
             <h4 className="text-white mb-3">Company</h4>
+            {/* eslint-disable-next-line */}
             <a className="btn btn-link" href="">About Us</a>
+            {/* eslint-disable-next-line */}
             <a className="btn btn-link" href="">Contact Us</a>
+            {/* eslint-disable-next-line */}
             <a className="btn btn-link" href="">Privacy Policy</a>
+            {/* eslint-disable-next-line */}
             <a className="btn btn-link" href="">Terms & Condition</a>
+            {/* eslint-disable-next-line */}
             <a className="btn btn-link" href="">FAQs & Help</a>
           </div>
           <div className="col-lg-4 col-md-6">
@@ -19,9 +24,13 @@ const Footer = () => {
             <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+212 66 66 66 66</p>
             <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
             <div className="d-flex pt-2">
+              {/* eslint-disable-next-line */}
               <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-twitter"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-facebook-f"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-youtube"></i></a>
+              {/* eslint-disable-next-line */}
               <a className="btn btn-outline-light btn-social" href=""><i className="fab fa-linkedin-in"></i></a>
             </div>
           </div>
@@ -60,9 +69,13 @@ const Footer = () => {
             
             <div className="col-md-6 text-center text-md-end">
              <div className="footer-menu">
+              {/* eslint-disable-next-line */}
                 <a href="">Home</a>
+                {/* eslint-disable-next-line */}
                 <a href="">Foods</a>
+                {/* eslint-disable-next-line */}
                 <a href="">Clothes</a>
+                {/* eslint-disable-next-line */}
                 <a href="">Needs</a>
               </div>
             </div>
