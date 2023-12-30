@@ -68,7 +68,7 @@ const Header = () => {
           {/* eslint-disable-next-line */}
         <a href="" class="navbar-brand p-0">
                 <h1 class="text-primary m-0">
-                <NavLink to="/" className="nav-link text-white " activeClassName="active" exact>
+                <NavLink to="/" className="nav-link text-primary " activeClassName="active" exact>
                   <i class="fa fa-map-marker-alt me-3"></i>AtlasExplore
                 </NavLink></h1>
                 {/* <!-- <img src="img/logo.png" alt="Logo"> --> */}

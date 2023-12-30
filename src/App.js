@@ -10,7 +10,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HospitalsRabat from './pages/HospitalsRabat';
 import HospitalsMarrakech from './pages/HospitalsMarrakech';
-
+import AboutMorocco from './components/AboutMorocco/AboutMorocco'
 
 import HospitalsCasablanca from './pages/HospitalsCasablanca';
 import MapPage from './pages/MapPage';
@@ -23,6 +23,7 @@ const App = () => {
     {/* <Header /> */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/aboutMorocco" element={<AboutMorocco />} />
             <Route path="/clothes"  element={<Clothes />} />
             {/* <Route path="/food"  element={<Food />} /> */}
             <Route path="/contact"  element={<Contact />} />

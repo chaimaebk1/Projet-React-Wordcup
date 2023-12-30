@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const About = () => {
 
@@ -77,7 +78,10 @@ return (
                 </div>
               </div>
               {/* eslint-disable-next-line */}
-              <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+              <NavLink to="/aboutMorocco" className="nav-link" activeClassName="active">
+                <a className="btn btn-primary rounded-pill py-3 px-5 mt-3" >Explore More</a>
+              </NavLink>
+
             </div>
     
           </div>
