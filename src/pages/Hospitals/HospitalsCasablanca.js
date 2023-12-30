@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
-import HospitalCard from '../components/hospitalCard';
+import HospitalCard from '../../components/hospitalCard';
 
 
 const containerStyle = {
@@ -10,18 +10,18 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 31.624363627002047,  // Default center latitude
-  lng: -7.987257903653542 , // Default center longitude
+  lat: 33.5731, // Default center latitude
+  lng: -7.5898 , // Default center longitude
 };
 
-const HospitalsMarrakech = () => {
+const HospitalsCasablanca = () => {
   const [hospitalData, setHospitalData] = useState([]);
   const [selectedHospital, setSelectedHospital] = useState(null);
 
   useEffect(() => {
     const fetchHospitalData = async () => {
       try {
-        const url = 'https://q918z.wiremockapi.cloud/HospitalsMarrakech';
+        const url = 'https://q918z.wiremockapi.cloud/HospitalsCasa';
         const response = await fetch(url);
         const result = await response.json(); // Parse JSON
         setHospitalData(result); // Set state with the correct data https://q918z.wiremockapi.cloud/HospitalsCasa
@@ -51,7 +51,7 @@ const HospitalsMarrakech = () => {
         ))}
       </div>
   <div className='col-lg-9'>
-      <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U"  libraries={["places"]} >
+      <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
           {selectedHospital && (
             <Marker
@@ -68,4 +68,4 @@ const HospitalsMarrakech = () => {
   );
 };
 
-export default HospitalsMarrakech;
+export default HospitalsCasablanca;

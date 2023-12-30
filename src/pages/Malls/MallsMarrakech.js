@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
-import HospitalCard from '../components/hospitalCard';
+import MallCard from '../../components/mallCard';
 
 
 const containerStyle = {
@@ -10,21 +10,21 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 35.7734573855575,   // Default center latitude
-  lng: -5.840757051144302, // Default center longitude
+    lat: 31.624363627002047,  // Default center latitude
+    lng: -7.987257903653542 ,  // Default center longitude
 };
 
-const HospitalsTanger = () => {
-  const [hospitalData, setHospitalData] = useState([]);
-  const [selectedHospital, setSelectedHospital] = useState(null);
+const MallsCasablanca = () => {
+  const [mallData, setmallData] = useState([]);
+  const [selectedmall, setSelectedmall] = useState(null);
 
   useEffect(() => {
-    const fetchHospitalData = async () => {
+    const fetchmallData = async () => {
       try {
-        const url = 'https://q918z.wiremockapi.cloud/HospitalsTanger';
+        const url = 'https://q918z.wiremockapi.cloud/mallsKech';
         const response = await fetch(url);
         const result = await response.json(); // Parse JSON
-        setHospitalData(result); // Set state with the correct data https://q918z.wiremockapi.cloud/HospitalsCasa
+        setmallData(result); // Set state with the correct data https://q918z.wiremockapi.cloud/mallsCasa
 
         console.log('API Response:', result);
       } catch (error) {
@@ -32,11 +32,11 @@ const HospitalsTanger = () => {
       }
     };
 
-    fetchHospitalData();
+    fetchmallData();
   }, []);
 
-  const handleCardClick = (hospital) => {
-    setSelectedHospital(hospital);
+  const handleCardClick = (mall) => {
+    setSelectedmall(mall);
   };
 
   return (
@@ -46,18 +46,18 @@ const HospitalsTanger = () => {
     <div className="row">
   
       <div className="col-lg-3 ml-20 mr-20 mt-20 overflow-auto" style={{ maxHeight: '600px' }} >
-        {hospitalData.map((hospital, index) => (
-          <HospitalCard key={index} hospital={hospital} onClick={handleCardClick} />
+        {mallData.map((mall, index) => (
+          <MallCard key={index} mall={mall} onClick={handleCardClick} />
         ))}
       </div>
   <div className='col-lg-9'>
       <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-          {selectedHospital && (
+          {selectedmall && (
             <Marker
               position={{
-                lat: parseFloat(selectedHospital.latitude),
-                lng: parseFloat(selectedHospital.longitude),
+                lat: parseFloat(selectedmall.latitude),
+                lng: parseFloat(selectedmall.longitude),
               }}
             />
           )}
@@ -68,4 +68,4 @@ const HospitalsTanger = () => {
   );
 };
 
-export default HospitalsTanger;
+export default MallsCasablanca;

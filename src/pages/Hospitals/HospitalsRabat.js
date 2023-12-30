@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
-import HospitalCard from '../components/hospitalCard';
+import HospitalCard from '../../components/hospitalCard';
 
 const containerStyle = {
   margin: '30px',

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import HospitalsRabat from '../pages/HospitalsRabat'; 
-import HospitalsCasablanca from '../pages/HospitalsCasablanca';
-import HospitalsMarrakech from '../pages/HospitalsMarrakech';
-import HospitalsTanger from '../pages/HospitalsTanger';
-
+import HospitalsRabat from '../pages/Hospitals/HospitalsRabat'; 
+import HospitalsCasablanca from '../pages/Hospitals/HospitalsCasablanca';
+import HospitalsMarrakech from '../pages/Hospitals/HospitalsMarrakech';
+import HospitalsTangier from '../pages/Hospitals/HospitalsTangier';
+import MallsRabat from '../pages/Malls/MallsRabat'; 
+import MallsCasablanca from '../pages/Malls/MallsCasablanca';
+import MallsMarrakech from '../pages/Malls/MallsMarrakech';
+import MallsTangier from '../pages/Malls/MallsTangier';
 
 const SearchBar = () => {
   
@@ -34,10 +37,11 @@ const SearchBar = () => {
     HospitalsRabat: HospitalsRabat,
     HospitalsCasablanca: HospitalsCasablanca,
     HospitalsMarrakech: HospitalsMarrakech,
-    HospitalsTanger: HospitalsTanger,
-
-    
-    // Ajoutez d'autres associations de composants selon les sélections possibles
+    HospitalsTangier: HospitalsTangier,
+    MallsRabat: MallsRabat,
+    MallsCasablanca: MallsCasablanca,
+    MallsMarrakech: MallsMarrakech,
+    MallsTangier: MallsTangier,
   };
 
   const SelectedComponent = components[`${selectedType}${selectedCity}`];
@@ -49,7 +53,7 @@ const SearchBar = () => {
           <h6 className="section-title bg-white text-center text-primary px-3">Explore Your Needs</h6>
           <h1 className="mb-5">Find Everything You Need!</h1>
           <h5 className="mb-4">
-            Search by city to discover a range of services including hospitals, malls and other facilities in 5 different cities. We've got you covered!
+            Search by city to discover a range of services including hospitals, malls and other facilities in 5 diffe!rent cities. We've got you covered!
           </h5>
         </div>
         <div className="mt-4 position-relative w-75 mx-auto animated slideInDown d-flex align-items-center">
@@ -60,8 +64,7 @@ const SearchBar = () => {
             onChange={handleTypeChange}
           >
             <option value="Hospitals">Hospitals</option>
-           
-           
+            <option value="Malls">Malls</option>
             {/* Add more options as needed */}
           </select>
 
@@ -72,7 +75,7 @@ const SearchBar = () => {
             onChange={handleCityChange}
           >
             <option value="Rabat">Rabat</option>
-            <option value="Tanger">Tanger</option>
+            <option value="Tangier">Tangier</option>
             <option value="Casablanca">Casablanca</option>
             <option value="Marrakech">Marrakech</option>
             {/* Add more options as needed */}
