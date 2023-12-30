@@ -11,7 +11,7 @@ export default makeStyles((theme) => ({
     height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
   },
   container: {
-    padding: '25px',
+    padding: '2src/pages/Cinemas src/pages/Malls/MallsCasablanca.js src/pages/Malls/MallsMarrakech.js src/pages/Malls/MallsRabat.js src/pages/Malls/MallsTangier.js5px',
   },
   marginBottom: {
     marginBottom: '30px',

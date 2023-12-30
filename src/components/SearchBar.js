@@ -7,6 +7,11 @@ import MallsRabat from '../pages/Malls/MallsRabat';
 import MallsCasablanca from '../pages/Malls/MallsCasablanca';
 import MallsMarrakech from '../pages/Malls/MallsMarrakech';
 import MallsTangier from '../pages/Malls/MallsTangier';
+import CinemasTangier from '../pages/Cinemas/CinemasTangier';
+import CinemasRabat from '../pages/Cinemas/CinemasRabat';
+import CinemasCasablanca from '../pages/Cinemas/CinemasCasablanca';
+import CinemasMarrakech from '../pages/Cinemas/CinemasMarrakech';
+
 
 const SearchBar = () => {
   
@@ -42,6 +47,11 @@ const SearchBar = () => {
     MallsCasablanca: MallsCasablanca,
     MallsMarrakech: MallsMarrakech,
     MallsTangier: MallsTangier,
+    CinemasTangier: CinemasTangier,
+    CinemasRabat: CinemasRabat,
+    CinemasCasablanca: CinemasCasablanca,
+    CinemasMarrakech: CinemasMarrakech,
+
   };
 
   const SelectedComponent = components[`${selectedType}${selectedCity}`];
@@ -65,6 +75,7 @@ const SearchBar = () => {
           >
             <option value="Hospitals">Hospitals</option>
             <option value="Malls">Malls</option>
+            <option value="Cinemas">Amusements</option>
             {/* Add more options as needed */}
           </select>
 

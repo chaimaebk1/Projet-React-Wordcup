@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
 import Home from './pages/Home';
 import Needs from './pages/Needs';
 import Clothes from './pages/Clothes';
@@ -9,14 +8,19 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HospitalsRabat from './pages/Hospitals/HospitalsRabat';
 import HospitalsMarrakech from './pages/Hospitals/HospitalsMarrakech';
-import AboutMorocco from './components/AboutMorocco/AboutMorocco'import MallsRabat from './pages/Malls/MallsRabat'; 
+import AboutMorocco from './components/AboutMorocco/AboutMorocco';
+import MallsRabat from './pages/Malls/MallsRabat'; 
 import MallsCasablanca from './pages/Malls/MallsCasablanca';
 import MallsMarrakech from './pages/Malls/MallsMarrakech';
 import MallsTangier from './pages/Malls/MallsTangier';
+import CinemasRabat from './pages/Cinemas/CinemasRabat'; 
+import CinemasMarrakech from './pages/Cinemas/CinemasMarrakech';
+import CinemasCasablanca from './pages/Cinemas/CinemasCasablanca';
 import HospitalsCasablanca from './pages/Hospitals/HospitalsCasablanca';
 import MapPage from './pages/MapPage';
 import StoreDetails from './components/ClothesPages/storeDetails';
 import HospitalsTangier from './pages/Hospitals/HospitalsTangier';
+import CinemasTangier from './pages/Cinemas/CinemasTangier';
 
 const App = () => {
   return (
@@ -39,6 +43,11 @@ const App = () => {
             <Route path="/MallsTangier" element={<MallsTangier />} />
             <Route path="/MallsRabat" element={<MallsRabat />} />
             <Route path="/MallsCasablanca" element={<MallsCasablanca />} />
+            <Route path="/CinemasRabat" element={<CinemasRabat />} />
+            <Route path="/CinemasMarrakech" element={<CinemasMarrakech />} />
+            <Route path="/CinemasTangier" element={<CinemasTangier />} />
+            <Route path="/CinemasCasablanca" element={<CinemasCasablanca />} />
+          
             <Route path="/Clothes/:selectedCity/:storeId" element={<StoreDetails/>} />
           </Routes>
           <Footer />
