@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import { GoogleMap, Marker, LoadScript } from '@react-google-maps/api';
+import Header from '../Header2';
+
 
 
 const StoreDetails = () => {
@@ -13,9 +15,9 @@ const StoreDetails = () => {
   const [carouselData, setCarouselData] = useState(null);
 
   const containerStyle = {
-    margin: '30px',
-    width: '60%',
-    height: '600px',
+    margin: '10px',
+    width: '100%',
+    height: '500px',
   };
   
   const center = storeData
@@ -63,7 +65,8 @@ const StoreDetails = () => {
 
   return (
     <div >
-        <div className="container-xxl py-5">
+      <Header/>
+        <div className="container-xxl py-5" style={{marginTop : '3%'}}>
             <div className="container">
             
                 <div className="row g-5 align-items-center flex-one-column-reverse " >
@@ -95,20 +98,34 @@ const StoreDetails = () => {
                             {storeData.description}
                           </p>   
                       </div>  
-                      {storeData && (
-                        <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
-                          <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-                            {storeData.latitude && storeData.longitude && (
-                              <Marker
-                                position={{
-                                  lat: parseFloat(storeData.latitude),
-                                  lng: parseFloat(storeData.longitude),
-                                }}
-                              />
-                            )}
-                          </GoogleMap>
-                        </LoadScript>
-                      )}
+                      
+                </div>
+                <div className="row g-5 flex-one-column-reverse " >
+                  <div className="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 className='fw-bolder mt-7'>📍 Discover the Way to Our Store! </h5><br/>
+                    <p>Navigate effortlessly to our store using the interactive map below. 
+                      We've made finding us a breeze! Whether you're a local or just passing through, 
+                      our convenient location awaits you. Feel free to explore the surroundings, 
+                      and we look forward to welcoming you soon.
+                    </p>
+                    <p className='fw-bolder'> Can't wait to see you at <span className='text-primary'> {storeData.name}!</span></p>
+                  </div>
+                  <div className="col-lg-7 ">
+                    {storeData && (
+                      <LoadScript googleMapsApiKey="AIzaSyA39oxS9elclB4YICCWNNRTQkIDIltxk3U">
+                        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
+                          {storeData.latitude && storeData.longitude && (
+                            <Marker
+                              position={{
+                                lat: parseFloat(storeData.latitude),
+                                lng: parseFloat(storeData.longitude),
+                              }}
+                            />
+                          )}
+                        </GoogleMap>
+                      </LoadScript>
+                    )}
+                  </div>
                 </div>
             </div>
         </div>

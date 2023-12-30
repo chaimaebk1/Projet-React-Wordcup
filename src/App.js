@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HospitalsRabat from './pages/Hospitals/HospitalsRabat';
 import HospitalsMarrakech from './pages/Hospitals/HospitalsMarrakech';
-import MallsRabat from './pages/Malls/MallsRabat'; 
+import AboutMorocco from './components/AboutMorocco/AboutMorocco'import MallsRabat from './pages/Malls/MallsRabat'; 
 import MallsCasablanca from './pages/Malls/MallsCasablanca';
 import MallsMarrakech from './pages/Malls/MallsMarrakech';
 import MallsTangier from './pages/Malls/MallsTangier';
@@ -22,9 +22,10 @@ const App = () => {
   return (
     <div>
     <Router>
-    <Header />
+    {/* <Header /> */}
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/aboutMorocco" element={<AboutMorocco />} />
             <Route path="/clothes"  element={<Clothes />} />
             {/* <Route path="/food"  element={<Food />} /> */}
             <Route path="/contact"  element={<Contact />} />
