@@ -34,7 +34,8 @@ The Coupe du Monde 2030 presents a unique opportunity for Morocco to draw in tou
 
 ## Logo
 
-[Include the logo image here]
+![image](https://github.com/chaimaebk1/Projet-React-Wordcup/assets/138532407/21110da5-812e-4f6b-af52-41c55158c54f)
+
 
 ## APIs Used
 
@@ -86,7 +87,9 @@ The Coupe du Monde 2030 presents a unique opportunity for Morocco to draw in tou
 
 ## Demo
 
-[Include a link to a demo video or a live version of the site]
+https://github.com/chaimaebk1/Projet-React-Wordcup/assets/138532407/dafa7b4b-a9fb-416e-a237-13f939f0d3cd
+
+
 
 ## License
 
@@ -100,8 +103,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 
-For any questions or suggestions, please contact [Your Name] at [Your Email].
+For any questions or suggestions, please contact us at balakichaimae@gmail.com or barhmiyousra3@gmail.com .
 
----
-
-This README provides an overview of the AtlasExplore project, detailing its context, objectives, target audience, technologies, features, and instructions for running the project. It aims to help users understand the purpose and functionality of the platform and guide them in setting it up and using it effectively.
